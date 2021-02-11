@@ -1,10 +1,13 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
 
 function User(props) {
 	const [query, setQuery] = useState("");
+	const history = useHistory();
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		window.location.href = `/search/${query}`;
+		// window.location.href = `/search/${query}`;
+		history.push(`/search/${query}`);
 	};
 	const onChange = (e) => {
 		setQuery(e.target.value);

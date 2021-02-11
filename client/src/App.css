@@ -1,0 +1,45 @@
+.App .form{
+  display: flex;
+  justify-content: center;
+}
+.App .form form input{
+  margin-bottom: 2px;
+  width: 250px
+}
+
+@media only screen and (min-width: 786px) {
+  .appleft {
+  	width: 45%;
+	margin: 0 10%;
+  }
+  .header {
+  padding: 10px 10%;
+  justify-content: space-between;
+}
+}
+@media only screen and (max-width: 786px) {
+  .appleft {
+  	width: 60%;
+	margin: 0 2%;
+  }
+  .header {
+  padding: 10px 2%;
+  justify-content: space-around;
+
+}
+}
+@media only screen and (min-width: 600px) {
+  .sugg {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .appleft {
+  	width: 100%;
+	margin: 0 2%;
+  }
+  .appright {
+  	display: none;
+  }
+}
